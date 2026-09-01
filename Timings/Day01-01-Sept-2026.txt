@@ -1,0 +1,7 @@
+1. Created EC2 instance and connected it via pem key and ppk key 
+
+2. installed and configured docker
+
+3. installed and configured putty and puttygen to connect to EC2 instance
+
+4. Learnt basic networking concepts :- subnets, IP addresses (IPV4 and IPV6) and domain name
