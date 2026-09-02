@@ -1,0 +1,16 @@
+Practiced following Linux commands on AWS EC2 instance :-
+
+1. mkdir      15. grep -i            
+2. ls -la     16. chmod
+3. cp         17. top 
+4. mv         18. df -h
+5. pwd        19. lscpu
+6. whoami     20. lspci
+7. ping       21. lsusb               
+8. uptime     22. ping   
+9. ps         23. ssh
+10. rm        24. curl  
+11. touch     25. sudo adduser username
+12. cat       26. export VARIABLE_NAME=value  
+13. head -n   27.  ifconfig
+14. tail -n   28. unset VARIABLE_NAME 
