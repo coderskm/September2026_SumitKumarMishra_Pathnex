@@ -1,100 +1,22 @@
-1. ll | grep pem
+Learnt following concepts in Linux :-
+1. ownership of file and folder divided in 3 parts -> owner itself, group and others
+2. 3 types of file permissions -> read, write and execute 
+3. sudo command used to temporarily assign root user privileges to current user to execute commands
+4. we can hide file or folder using move command and adding dot in front of file or folder name
+5. vim and nano text editors used to handle files.
+6. soft link used to create pointer to a file which when original file is deleted breaks the link to original file
+7. hard link used to create pointer to a file which when original file is deleted does not break the link to original file 
+8. hard link good for taking backups for files
+9. absolute path starts with forward slash always and it does not change
+10. relative path starts with current working directory and it may change accordingly
+11. find command useful for finding files or folders based on matching criteria
 
-2. drwxr-xr-x@ -> 
-here d means directory
-@ denotes metadata which means it has stored information about data somewhere in cache
-
-3. xattr command -> used to check metadata about a file or folder eg :- xattr filename
- 
-4. -rw-r--r-- ->
-divide this into three parts :-
-1> rw- :- owner -> 4+2 = 6
-2> r-- :- group -> 4
-3> r-- :- other -> 4
-
-owner is someone who creates file or folder
-
-r represents Read (4) , w represents Write (2) and x represents Execute (1)
-
-5. Permissions 0644 are too open :- here 0 represents octal notation 
-
-6. Examples :- 
-1> chmod 400 linux-server.pem
-2> chmod -rwxrw-r-- info.txt
-3> chmod u=r,g=0,o= tether.pem
-
-7. key file should only have read access to connect via SSH ->
-Syntax :- ssh -i keyfile.pem ec2-instance-username@public-IP
-
-8. root user :-
-1> login -> sudo -i
-2> logout -> exit
-3> no other user can access root folder until given access through sudo
-
-9. sudo :-
-1> sudo stands for "super user do" which helps give root user power to normal user.
-2> Eg :- 
-<i> whoami -> ec2-user
-<ii> sudo whoami -> root 
-3> So sudo gives temporary elevated privileges for a command, unless you explicitly open a root shell with something like sudo -i.
-
-10. total 32 -> on running ls -la it gives "total 32" which means total 32KB of data
-
-11. sticky bit :- 
-
-12. chown ->
-1> command to change owner of file or folder
-2> Eg :- sudo chown root:root pathnex-ec2 
-
-13. command for human readable size -> ls -tlh
-
-14. using mv and . we can hide files and folder ->
-1> Eg :- mv test.txt .test.txt
-2> Eg :- mv myfolder .myfolder
-3> to unhide it just rename it and remove . -> Eg :- mv .myfolder myfolder
-4> command to list files and folder along with hidden one :- ls -la
-
-15. ls -lahtS - represents command flag and -- represents word
-
-16. text editor->
-1> vim :- i for insert; :wq for write and quit ; :qa for quit without changing
-2> undo in vim :- escape keypress ; u keypress
-3> redo in vim :- escape keypress ; Ctrl + r keypress
-2> nano :- ctrl+o for changes inside file; enter keypress; ctrl+x for exit
-
-17. cat command to read file. 
-
-18. tail -10 path
-
-19. to check live changes in file :- tail -f path
-
-20. append manual data using >> via terminal -> Eg :- echo "its good" >> path
-
-21. link ->
-1> Its like creating a pointer to access a file at some other location.
-2> two types :- soft link and hard link
-3> also known as symbolic link
-
-4> in soft link if original file is deleted then link is broken
-5> command :- ln -s org-file/org-file-path org-file-link-name
-6> Example :-
-command :- ln -s placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt og-text-file-short-link
-O/P :- lrwxrwxrwx. 1 ec2-user ec2-user  57 Sep  3 07:23 og-text-file-short-link -> placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt
-
-7> in hard link if original file is deleted or renamed then link is not broken so its useful for backup
-8> command :- ln org-file/org-file-path org-file-link-name
-
-22. inode number command :- ls -li file-name/path
-
-23. relative path and absolute path ->
-1> absolute path starts with forward slash always and it does not change
-2> relative path starts with current working directory and it may change accordingly
-3> Example :-
-<i> ABSOLUTE --> /home/user/projects/website/index.html
-<ii> RELATIVE --> projects/website/index.html
-
-24. find ->
-1> find command useful for finding files or folders based on matching criteria.
-2> Eg :- find starting-directory-path -name "*.log" 
- 
+linux commands examples :-
+1. chmod 400 linux-server.pem
+2. sudo whoami
+3. sudo chown root:root pathnex-ec2
+4. mv test.txt .test.txt
+5. tail -f path
+6. ln -s placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt og-text-file-short-link
+7. ln placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt og-text-file-hard-link
 
