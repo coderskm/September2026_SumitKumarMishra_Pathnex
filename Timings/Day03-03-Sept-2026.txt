@@ -1,0 +1,22 @@
+Learnt following concepts in Linux :-
+1. ownership of file and folder divided in 3 parts -> owner itself, group and others
+2. 3 types of file permissions -> read, write and execute 
+3. sudo command used to temporarily assign root user privileges to current user to execute commands
+4. we can hide file or folder using move command and adding dot in front of file or folder name
+5. vim and nano text editors used to handle files.
+6. soft link used to create pointer to a file which when original file is deleted breaks the link to original file
+7. hard link used to create pointer to a file which when original file is deleted does not break the link to original file 
+8. hard link good for taking backups for files
+9. absolute path starts with forward slash always and it does not change
+10. relative path starts with current working directory and it may change accordingly
+11. find command useful for finding files or folders based on matching criteria
+
+linux commands examples :-
+1. chmod 400 linux-server.pem
+2. sudo whoami
+3. sudo chown root:root pathnex-ec2
+4. mv test.txt .test.txt
+5. tail -f path
+6. ln -s placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt og-text-file-short-link
+7. ln placeholder_demo/multi/dir-1/dir-2/dir-3/og-text-file.txt og-text-file-hard-link
+
