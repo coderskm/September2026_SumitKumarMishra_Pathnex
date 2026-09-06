@@ -1,0 +1,13 @@
+Learnt following things today about linux :- 
+1. creating EC2 linux server instance in terraform
+2. absolute and relative paths
+3. find command :- used to search files and folders in given path
+4. find command to search top 10 largest file in Linux :-find / -type f -printf '%s %p\n' 2>/dev/null | sort -nr | head -10
+5. sed command :- stream editor to edit and manage text files
+6. top command :- task manager of linux
+7. kill command :- used to send signal to linux process to stop it, run it and destroy it
+8. pgrep command :- used to search process by its name
+9. pkill command :- used to stop processes running in linux
+10. df -h command : for finding disk usage in human readable format
+11. umask command :- used to change default permissions when files and folders created
+12. tar and gzip commands :- to compress and decompress files in zip format
