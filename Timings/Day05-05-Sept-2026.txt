@@ -1,0 +1,13 @@
+Learnt following things in Linux :-
+1. sshd_config file changes for root login user
+2. telnet command to check if ports are open for communication
+3. creating new user and giving it root privileges
+4. copy vs rsync command
+5. disk management by lsblk command 
+6. ifconfig command to see network information
+7. curl vs wget commands
+8. export vs alias
+9. cron job basics
+10. bash variables like $0, $1 or $#
+11. df -h vs df -ih
+12. zombie process vs orphan process  
