@@ -1,0 +1,17 @@
+Learnt following in Git/Github :-
+1. git init command -> used to initialize git repo in local system
+2. git clone command -> download git repository on your local system
+3. git add command -> add working directory changes to staging area
+4. git commit command -> creates a commit kind of snapshot of changes to be pushed to git
+5. git push command -> committed changes pushed to github's cloud
+6. git stash command -> used to temporarily store changes in working directory while moving to some different branch
+7. git cherry-pick command -> used to apply commit changes of one branch to another branch
+8. git reset command -> to unstage files and remove changes 
+9. git pull command -> fetch and merge latest changes
+10. git fetch command -> fetch latest changes without merging it
+11. fork -> copying repository code to your own account over cloud only
+12. git merge command -> merges two branches together
+13. git checkout command -> used to change branch
+14. .gitignore file -> used to add files and folders which you don't want git to track
+15. reset Vs revert
+16. rebase Vs merge
