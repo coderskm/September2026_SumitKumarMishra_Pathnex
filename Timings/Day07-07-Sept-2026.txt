@@ -1,0 +1,29 @@
+Learnt following concepts in AWS :-
+
+1> On Premise Server -> It can only be accessed through private IP
+
+2> Cloud Server -> It can only be accessed through public IP or say Internet
+
+3> Region -> Its a geographical area where availability zones are located
+
+4> Availability Zones -> Its a place inside region where actual cloud infrastructure is running.
+
+5> one region can have multiple AZs
+
+6> Landing Zone -> It gives proper structure and say template to create AWS environment for organization
+
+7> Control Tower -> It manages environment, check the rules and control access to make sure everything is according to policy.
+
+8> EC2 -> It provides virtual server in cloud where we can run our own machines with our own configuration
+
+9> Auto Scaling Groups -> these are group of instances which scale up or down based on traffic.
+
+10>  IAM -> Its used to manage access to AWS resources by users, groups, roles and policy
+
+11> VPC -> Its used to create our own networking configuration through private and public subnets
+
+12> NAT gateway -> attached to private subnets
+
+13> internet gateway -> attached to public subnets
+
+14> S3 -> It stores data in form of objects inside buckets which are highly scalable. 
