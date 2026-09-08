@@ -1,0 +1,14 @@
+Learnt following Services in AWS :-
+1. Organization and folder structure changes between SCP / AWS / Azure
+2. IAM Vs SCP
+3. Permissions and Policy Inheritance
+4. Session Manager -> connecting to EC2 instance without SSH
+5. Route 53 Service -> hosts applications and acts as DNS
+6. Tags -> key value labels to track and identify AWS Resources
+7. types of routing supported by Route 53
+8. CloudTrail -> track the user who does changes inside AWS instance
+9. CloudWatch -> monitoring metrics like health checks, CPU utilization for AWS resources
+10. CloudFront -> service for CDN
+11. AWS Shield -> protects public resources from DDOS
+12. NACL Vs Security Groups
+13. Lambda -> used to run code based on some event trigger for short period of time.
