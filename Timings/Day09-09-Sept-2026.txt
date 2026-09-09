@@ -1,0 +1,39 @@
+Learnt following services in AWS :-
+1. AWS GuardDuty -> Threat detection service which monitors AWS accounts for suspicious activity. Kind of does penetration testing in AWS using machine learning algos.
+
+2. Amazon Inspector -> It scans AWS services for security vulnerabilities like EC2 instances, container images and lambda functions. We can say its a vulnerability scanner.
+
+3. AWS KMS -> It manages encryption keys for securing data in AWS services.
+
+4. AWS System Manager -> Mainly used for secure remote access and automate routine tasks of deployment.
+
+5. AWS RDS -> Its service to manage SQL based database like MySQL, PostgreSQL and MariaDB.
+
+6. Amazon Aurora -> Its high performance relational DB service which supports MySQL and PostgreSQL.
+
+7. Amazon DynamoDB -> AWS service which manages NoSQL based DB
+
+8. Amazon Redshift -> Its cloud based data warehouse service which allows SQL queries to be run on them in parallel for faster query processing.
+
+9. AWS Batch -> handles batch computing and processing jobs at any scale
+
+10. AWS Glue -> which is ETL tool and serverless which is integrated with AWS Redshift and S3.
+
+11. AWS Elastic Beanstalk -> acts as platform as a service for deploying, scaling and monitoring applications made in JS, Java or Python.
+
+12. AWS X-Ray -> a debugging tool service for microservice based applications
+
+13. AWS CodePipeline -> used to automate entire end to end release process from code change to production.
+It automates and defines stages in which code will move like source, build, test and deploy.
+
+14. AWS CodeBuild -> used to compile code, run unit tests and creates ready to use packages.
+
+15. AWS CodeDeploy -> It pushes your finished software packages out to your servers or cloud services.
+
+16. RTO Vs RPO ->
+1> Terms used in case of disaster recover.
+1> RTO stands for Recovery Time Objective means for how long systems can be down.
+2> RPO stands for Recovery Point Objective means how much recent data system can offord to lose.
+
+17. IAAS Vs PAAS Vs SAAS
+
