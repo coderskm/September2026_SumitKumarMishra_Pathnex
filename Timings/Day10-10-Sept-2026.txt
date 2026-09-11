@@ -1,0 +1,11 @@
+Learnt about following things docker :-
+1. Dockerfile
+2. Docker Image
+3. Docker Container
+4. Docker Volume
+5. Docker Network
+6. Docker Registry
+7. Docker Compose
+8. basic docker commands :- docker run, docker build, docker ps etc.
+9. CMD Vs RUN Vs ENTRYPOINT
+10. Docker Vs Virtual Machine
