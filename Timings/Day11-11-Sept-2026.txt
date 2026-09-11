@@ -1,0 +1,7 @@
+Learnt about following things in Kubernetes :-
+1. what is Kubernetes and why its used ? 
+2. Kubernetes cluster
+3. Nodes :- master node and worker node
+4. master node components -> api-server, etcd, controller-manager and scheduler
+5. worker node components -> kubelet, kube-proxy, CRI and pods
+6. How EKS used to deploy applications in real world
