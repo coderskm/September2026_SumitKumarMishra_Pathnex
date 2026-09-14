@@ -1,0 +1,7 @@
+1. Revised kubernetes topics
+2. Learnt following things :-
+<i> labels and selectors
+<ii> Taint and Toleration
+<iii> Affinity
+<iv> Persistant Volume and Persistant Volume Claim
+<v> liveness probe and readiness probe
