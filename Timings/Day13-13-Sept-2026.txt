@@ -1,0 +1,49 @@
+1> Important files in repository -> 
+1. repo name :- pathnex-eks-tf
+2. important files :- eks.tf, iam.tf, provider.tf, variables.tf, nodegroup.tf
+
+2> limit in Kubernetes ->
+1. it defines maximum amount of resource that container is allowed to use.
+2. resources are :- CPU and memory.
+
+3> request in Kubernetes -> 
+1. minimum resource Kubernetes guarentees.
+2. resources are :- CPU and memory.
+ 
+4> strategy in Kubernetes -> 
+1. it refers to strategy Kubernetes uses during deployment when updating or replacing pods.
+2. strategies include :-
+<i> rolling update -> k8s gradually replaces old pods with new pods.
+<ii> recreate -> k8s terminate all existing pods then create new pods.
+
+5> Kubernetes cluster autoscaler ->
+1. It increases or decreases number of nodes in a cluster based on predefined Auto Scaling Groups or node groups.
+
+6> HPA ->
+1. stands for horizontal pod autoscaler.
+2. it automatically increases or decreases number of pods based on resource usage or other metric.
+
+7> karpenter ->
+1. it solves same issue of Kubernetes cluster autoscaler but it does not need predefined ASG but directly assigns EC2 instance based on requirement.
+2. karpenter is faster than KCA.
+
+7> KEDA ->
+1. Same function as HPA.
+2. stands for Kubernetes event driven autoscaling.
+3. it creates/deletes metrics based on background workers and event driven applications.
+
+lifecycle block, tags block
+
+8> ServiceAccount ->
+1. gives identity assigned to Kubernetes PODS.
+
+9> IRSA ->
+1. stands for IAM roles for service account.
+2. used to get AWS IAM permissions through its Kubernetes ServiceAccount.
+3. Eg :- If policy allows attached to role allows us to read S3 files, then we can  
+above mentioned autoscaler tools manage pods according to traffic 
+
+10> EKS ->
+1. Node Monitoring Agent -> Node Health
+2. Cluster Autoscaler -> Node Count
+3. KEDA -> Pod Count
