@@ -1,0 +1,35 @@
+Today focussed on following :-
+1. troubleshooting EKS made by terraform file for pods, deployments and namespaces.
+
+2. Eg :-
+<i> cluster autoscaler pod was not getting allocated in any node so changes were made 
+in terraform file inside "depends_on" array while creating cluster only
+<ii> another was label and selector mismatch 
+
+3. web server deployment example by yaml file code and then creating namespace and apply those changes
+
+4. Persistant Volume :- total storage available in Kubernetes.
+
+5. Persistant Volume Claim :-  Actual storage attached to kubernetes pods
+
+6. Storage Class :- It tells how and where to create the storage.
+
+7. Job :- runs once to complete task. Eg :- database migration.
+
+8. CronJob :- run task on schedule often repeated. Eg :- daily database backup.
+
+9. probes
+
+10. daemonset :- 
+1> useful to run one pod on every node. 
+2> when new node is created, it adds a pod automatically to it.
+3> Eg :- monitoring agents for node level activity.
+
+11. statefulset :-
+1> useful to run pods with stable identities.
+2> if pod dies then its replacement maintains the same identity
+3> Eg :- used in stateful application where Database is involved
+
+deployment strategy -> rolling update and recreate
+
+affinity -> node affinity, pod affinity and pod anti-affinity
