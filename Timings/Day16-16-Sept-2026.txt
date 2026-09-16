@@ -1,0 +1,47 @@
+1> Affinity and Anti-Affinity :-
+1. Its a rule that tells scheduler to run pod near some another pod or on some node
+2. Node Affinity :- controls which nodes a pod can run on 
+3. Pod Affinity :- controls which pods should be placed near each other
+4. Pod Anti-Affinity :- controls whether pods should be placed near each other
+5. Eg :- 
+<i> nodeSelectorTerms -> key, operator and values
+<ii> labelSelector -> matchLabels
+
+2> preferredDuringSchedulingIgnoredDuringExecution Vs requiredDuringSchedulingIgnoredDuringExecution :-
+1. they both are used to send instructions to scheduler when pod is being scheduled to node
+2. required means condition is mandatory when scheduling 
+3. preferred means condition is good to have but not mandatory when scheduling
+4. IgnoredDuringExecution :- once pod starts running don't remove it from node if condition becomes false
+5. Eg :-
+<i> requiredDuringSchedulingIgnoredDuringExecution -> nodeSelectorTerms
+<ii> preferredDuringSchedulingIgnoredDuringExecution -> preference
+
+3> scoring preference in preferredDuringSchedulingIgnoredDuringExecution :-
+1. used to select most desirable node to select pods
+
+4> topologyKey :-
+1. its used to place pods together or pods at separate nodes based on key value assigned.
+
+5> taint and toleration :-
+1. taint applied on nodes
+2. toleration applied on pods
+3. Eg:-
+<i> kubectl taint nodes node-1 type=gpu:NoSchedule
+<ii> spec:
+       tolerations:
+         - key: "type"
+           operator: "Equal"
+           value: "gpu"
+           effect: "NoSchedule"
+
+6> probes :- liveness, readiness and startup
+
+7> OOMKilled :-
+1. OOM stands for Out Of Memory 
+2. In this the container is terminated as it exceeds the limit of memory usage
+
+8> CrashLoopBackOff :-
+1. Its status indicating that container which was crashed has been restarted  
+
+
+
