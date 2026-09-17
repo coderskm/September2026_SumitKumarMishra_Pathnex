@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret 
+metadata: 
+  name: pathnex-secret
+type: Opaque
+data: 
+  password: slek591fhaewf34=

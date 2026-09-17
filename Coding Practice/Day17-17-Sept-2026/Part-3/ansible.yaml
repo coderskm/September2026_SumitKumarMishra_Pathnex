@@ -1,0 +1,10 @@
+- name: Install tool based on OS
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: install htop 
+      yum:
+        name: htop 
+        state: present 
+      when: ansible_facts['os_family'] == "RedHat"
