@@ -1,0 +1,9 @@
+- name: create pathnex user
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: create user pathnex-admin
+      user:
+        name: pathnex-admin
+        shell: /bin/bash

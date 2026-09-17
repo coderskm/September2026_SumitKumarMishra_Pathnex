@@ -1,0 +1,19 @@
+topics covered today :-
+1. Helm -> Its a package manager for kubernetes environment
+
+2. through helm we can either download packages of other applications or we can make a package out of our own application and publish it 
+
+3. we can download bitnami repo which contains helm chart of popular applications like nginx, argo-cd and grafana 
+
+4. command to create our own helm chart :- helm create chart-name
+
+5. components of helm chart :-
+1> values.yaml file -> used to customize yaml files present inside templates folder
+2> Chart.yaml file -> contains metadata for helm chart like version of app, name of app
+3> templates folder -> contains all yaml files of all resources required to run app
+
+6. Inside templates folder files we can use values defined inside values.yaml file by .Values notation and metadata inside Chart.yaml by .Chart notation
+
+6. we can create package by command :- helm package package-name 
+
+7. command to search a repo :- helm search repo-name string-to-search
