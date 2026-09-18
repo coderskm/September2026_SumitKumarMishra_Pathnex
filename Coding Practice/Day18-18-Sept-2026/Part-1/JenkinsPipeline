@@ -1,0 +1,19 @@
+pipeline {
+    agent any 
+    stages {
+        stage("Parallel Tasks") {
+            parallel {
+                stage("Bulid") {
+                    steps {
+                        sh 'mvn clean compile'
+                    }
+                }
+                stage("Test) {
+                    steps {
+                        sh 'mvn test'
+                    }
+                }
+            }
+        }
+    }
+}
