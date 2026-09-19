@@ -1,0 +1,18 @@
+Today's session was about Argo CD which is GitOps tool :-
+
+1. it looks for changes done in git repo and present state of application deployed on 
+EKS cluster , compares it and pushes necessary changes on to that cluster.
+
+2. we setup the argo cd by installing it onto the EKS cluster using Jump Server
+
+3. for configuration :-
+<i> we connect to EC2 server acting as jump server 
+<ii> add AWS credentials to it and install tools like helm, kubectl, kubectx and git
+<iii> using kubeconfig we connect EKS and jumpserver
+<iv> deploy argocd in separate namespace argocd 
+<v> allow jump server security group inside EKS.
+<vi> access argocd as service via nodeport 
+
+4. login credentials as admin user with password in base64 encoding need to decode password
+
+5. to track apps in argoCD we use health status and sync status

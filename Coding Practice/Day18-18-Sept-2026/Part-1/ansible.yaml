@@ -1,0 +1,11 @@
+- name: install packages for pathnex 
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install tools
+      yum:
+        name: 
+          - git
+          - wget
+        state: present

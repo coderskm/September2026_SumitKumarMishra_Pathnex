@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+    }
+    stages {
+    stage("Print"){
+        steps {
+        sh 'echo "Welcome to $INSTITUTE_NAME Devops Training"'
+        }
+    }
+    stage("Build"){
+        steps {
+        sh 'mvn clean package -D institute.name=$INSTITUTE_NAME'
+        }
+    }
+    }
+}

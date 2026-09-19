@@ -1,0 +1,16 @@
+- name: manage nginx
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: update config file
+      copy:
+        src: index.html
+        dest: /usr/share/nginx/html/index.html
+      notify: restart nginx 
+    
+  handlers:
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted
