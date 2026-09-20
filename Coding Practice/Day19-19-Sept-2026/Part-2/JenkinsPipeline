@@ -1,0 +1,21 @@
+pipeline {
+    agents any 
+    environment {
+        INSTITUTE_NAME = "Pathnex" 
+    }
+    matrix {
+        axes {
+            axis {
+                name 'JAVA_VERSION'
+                values '8', '11', '17'
+            }
+        }
+        stages {
+            stage('Build') {
+                steps {
+                    sh 'echo building with java $JAVA_VERSION'
+                }
+            }
+        }
+    }
+}

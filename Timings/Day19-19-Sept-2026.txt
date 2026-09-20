@@ -1,0 +1,13 @@
+today's session focussed on terraform :-
+1. terraform commands
+2. state file concept
+3. terraform code written HCL (Hashicorp Corporation Language) 
+4. HCl syntax :-
+<i> provider
+<ii> version (~>)
+
+5. modules in terraform 
+
+6. opentofu Vs terraform
+
+7. using one resource into another resource
