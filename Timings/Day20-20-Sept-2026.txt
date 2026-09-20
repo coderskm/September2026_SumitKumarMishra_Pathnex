@@ -1,0 +1,9 @@
+Topics covered today :- 
+1. state lock in terraform -> applied on cloud resources 
+2. terraform force-unlock
+3. state files are stored in S3
+4. .terraform.lock.hcl & .terraform 
+5. provider in terraform 
+6. module in terraform
+7. terraform drift
+8. interview Q & A
