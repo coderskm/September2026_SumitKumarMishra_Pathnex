@@ -1,0 +1,9 @@
+covered following ansible topics today :-
+1. architecture of ansible
+2. playbook
+3. roles
+4. modules
+5. SSH Vs WinRM
+6. terraform Vs ansible
+7. why ansible is agentless
+8. inventory using .ini file
