@@ -1,0 +1,1 @@
+learnt terraform based on last 2 sessions
