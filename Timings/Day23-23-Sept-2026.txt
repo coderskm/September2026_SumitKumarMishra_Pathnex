@@ -1,0 +1,6 @@
+Today's studied following about CI/CD :-
+1. CI/CD understanding
+2. CI/CD tools :- gitlab CI, github actions and Jenkins
+3. difference between Github , Gitlab and Jenkins
+4. Deploying Jenkins on EC2 instance with help of Ansible on a jump server
+5. Basic syntax of how pipelines are written
