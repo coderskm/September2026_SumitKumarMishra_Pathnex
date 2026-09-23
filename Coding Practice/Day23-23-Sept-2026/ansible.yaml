@@ -1,0 +1,16 @@
+- name: create multiple pathnex users
+  hosts: all
+  become: yes
+
+  vars:
+    users: 
+      - dev1
+      - dev2
+      - dev3
+
+  tasks:
+    - name: create users
+      user: 
+        name: "{{ item }}"
+        state: present 
+      loop: "{{ users }}"
