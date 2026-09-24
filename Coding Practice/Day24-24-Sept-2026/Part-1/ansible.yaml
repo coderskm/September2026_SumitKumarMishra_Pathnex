@@ -1,0 +1,11 @@
+- name: Show system facts for pathnex
+  hosts: all
+
+  tasks:
+    - name: print os info
+      debug:
+        var: ansible_facts['os_family']
+    
+    - name: print ip address
+      debug: 
+        var: ansible_facts['default_ipv4']['address']

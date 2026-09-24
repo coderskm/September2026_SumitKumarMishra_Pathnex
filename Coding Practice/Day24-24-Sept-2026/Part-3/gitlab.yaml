@@ -1,0 +1,12 @@
+stages:
+  - build
+
+variables:
+  INSTITUTE_NAME: "Pathnex" 
+  API_KEY: "PLACEHOLDER_SECRET" 
+
+build:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "using secret $API_KEY for $INSTITUTE_NAME"
