@@ -1,0 +1,25 @@
+pipeline {
+    agent any 
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+    }
+    stages {
+        stage("Deploy to Dev") {
+            steps {
+                sh 'echo "Deploying $INSTITUTE_NAME to dev environment"'
+            }
+        }
+        stage("Deploy to Staging") {
+            steps {
+                input message: "Approve Staging Deployment ?"
+                sh 'echo "Deploying $INSTITUTE_NAME to staging environment"'
+            }
+        }
+        stage("Deploy to Prod") {
+            steps {
+                input message: "Approve Prod Deployment ?"
+                sh 'echo "Deploying $INSTITUTE_NAME to prod environment"'
+            }
+        }
+    }
+}

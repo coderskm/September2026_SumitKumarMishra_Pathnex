@@ -1,0 +1,11 @@
+Revised below topics today :- 
+1. AWS services :- EC2, VPC, Subnets, NAT and Inter net gateways and security groups
+2. DNS records :- A, AAAA, MX, CNAME and others
+3. ansible-vault :- used to encrypt sensitive data like password and API Keys
+4. Observability tools :- Prometheus and visualizing tool Grafana
+5. things taken in account during observability :-
+1> Monitoring -> monitor CPU metrics and Disk usage
+2> Logging -> printing certain things to track flow
+3> Tracing -> useful when error occurs
+4> Alerting -> sending mails when reached certain threshold
+
