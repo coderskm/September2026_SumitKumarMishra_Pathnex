@@ -1,0 +1,20 @@
+stages:
+  - docker-build
+
+variables:
+  INSTITUTE_NAME: "Pathnex"
+  TEAM: "DevOps" 
+  ENV: "staging"
+  PROJECT: "WebApp" 
+
+docker-build:
+  stage: docker-build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t pathnex/webapp:${ENV}-${CI_PIPELINE_ID} \
+      --label "INSTITUTE_NAME=$INSTITUTE_NAME" \
+      --label "TEAM=$TEAM" \
+      --label "ENV=$ENV" \
+      --label "PROJECT=$PROJECT" .

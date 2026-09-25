@@ -1,0 +1,18 @@
+- name: configure nginx for pathnex
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: copy nginx config 
+      copy:
+        dest: /etc/nginx/nginx.conf
+        content: |
+          user nginx;
+          worker_processes auto;
+      notify: restart nginx
+  
+  handlers:
+    - name: restart nginx 
+      service:
+        name: nginx
+        state: restarted

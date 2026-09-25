@@ -1,0 +1,9 @@
+- name: create users with comments
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: create pathnex user
+      user: 
+        name: devuser
+        comment: "Pathnex Developer User"
