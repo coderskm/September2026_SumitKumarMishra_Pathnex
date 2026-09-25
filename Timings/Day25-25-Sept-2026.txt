@@ -1,0 +1,6 @@
+Today we covered datadog :-
+1> it monitors logs and metrics as well as shows it in visual format
+2> we can customize our own dashboard with different graphics such as graphs and charts
+3> we can deploy datadog agent over kubernetes cluster to monitor it
+4> configuring using parameter store service used to securely store credentials
+ 

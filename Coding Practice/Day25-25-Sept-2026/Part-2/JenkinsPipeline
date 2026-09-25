@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+        TEAM = "DevOps"
+        ENV = "staging"
+        PROJECT = "WebApp"
+    }
+    stages {
+        stage("Checkout") {
+            steps {
+                git url: 'https://github.com/Pathnex/sample-java-app.git'
+            }
+        }
+        stage("Build Docker Image") {
+            steps {
+                sh '''
+                docker build -t pathnex/webapp:${ENV}-${BUILD_NUMBER} \
+                --label "INSTITUTE_NAME=$INSTITUTE_NAME" \
+                --label "TEAM=$TEAM" \
+                --label "ENV=$ENV" \
+                --label "PROJECT=$PROJECT" .
+                '''
+            }
+        }
+    }
+}
