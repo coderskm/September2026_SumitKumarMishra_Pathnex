@@ -1,0 +1,22 @@
+stages:
+  - unit
+  - integration 
+
+variables:
+  INSTITUTE_NAME: "Pathnex"
+  TEAM: "QA"
+  ENV: "dev" 
+
+unit-test:
+  stage: unit
+  image: maven:3.8.1-jdk-17
+  script:
+    - mvn test -D group=unit 
+    - echo "Unit tests completed for $INSTITUTE_NAME by $TEAM in $ENV" 
+
+integration-test:
+  stage: integration 
+  image: maven:3.8.1-jdk-17 
+  script:
+    - mvn verify -D group=integration
+    - echo "Integration tests completed for $INSTITUTE_NAME by $TEAM in $ENV"
