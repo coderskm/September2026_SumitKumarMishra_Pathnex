@@ -1,0 +1,9 @@
+- name: deploy pathnex template
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: create config 
+      template:
+        src: pathnex.conf.j2
+        dest: /etc/pathnex.conf
