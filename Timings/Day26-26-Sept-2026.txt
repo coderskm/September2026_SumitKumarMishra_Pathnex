@@ -1,0 +1,20 @@
+In today's session we covered following topics :-
+1. difference between metrics, logs and traces.
+
+2. span in traces.
+
+3. ELK stack -> 
+1> Logstash :- processes or transforms data
+2> ElasticSearch :- stores the data and searches it 
+3> Kibana :- visualizes the data
+
+4. Beats :- Its used to collect data
+
+5. ILM ->
+1> Hot Phase :- data is actively being written and searched
+2> Warm Phase :- data is not actively written but searched
+3> Cold Phase :- data is rarely accessed but want it for searching 
+4> Frozen Phase :- data is rarely accessed but you want to delete it 
+5> Delete Phase :- data is not accessed and needs to be deleted
+
+6. deploying ELK stack with help of ansible on AWS.
