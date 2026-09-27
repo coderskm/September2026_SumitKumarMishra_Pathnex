@@ -1,0 +1,18 @@
+stages:
+  - build
+
+variables:
+  INSTITUTE_NAME: "Pathnex"
+  TEAM: "DevOps"
+  ENV: "staging"
+
+build:
+  stage: build
+  image: maven:3.8.1-jdk-17
+  cache:
+    key: "${ENV}-maven-cache"
+    paths:
+      - .m2/repository
+  script:
+    - mvn clean compile
+    - echo "cached dependencies for $INSTITUTE_NAME in $ENV by $TEAM"

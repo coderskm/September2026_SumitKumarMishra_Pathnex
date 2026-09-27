@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: pod 
+metadata:
+  name: pathnex-init 
+spec:
+  initContainers:
+    - name: setup
+      image: busybox 
+      command: ["sh", "-c", "echo initializing; sleep 10"]
+  containers: 
+    - name: main 
+      image: nginx

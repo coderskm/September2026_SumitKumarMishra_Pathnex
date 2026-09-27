@@ -1,0 +1,22 @@
+node {
+    def envName = "dev"
+    env.INSTITUTE_NAME = "Pathnex"
+    env.TEAM = "DevOps"
+
+    stage("Checkout") {
+        git url: 'https://github.com/Pathnex/sample-java-app.git'
+    }
+
+    stage("Build") {
+        if($envName == "dev") {
+            sh 'echo "building $INSTITUTE_NAME app in dev environment for $TEAM"'
+        }else{
+            sh 'echo "Skipping build for $envName"'
+        }
+    }
+
+    stage("Deploy") {
+        input message: "Approve deployment for $(envname) ?"
+        sh 'echo "Deploying $INSTITUTE_NAME app to $envName for $TEAM team"'
+    }
+}
