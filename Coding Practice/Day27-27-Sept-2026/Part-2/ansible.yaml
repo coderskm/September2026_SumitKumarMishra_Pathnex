@@ -1,0 +1,20 @@
+- name: install and enable services
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install services
+      yum:
+        name:
+          - httpd
+          - firewalld
+        state: present 
+    
+    - name: enable and start services
+      service:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+        - httpd
+        - firewalld

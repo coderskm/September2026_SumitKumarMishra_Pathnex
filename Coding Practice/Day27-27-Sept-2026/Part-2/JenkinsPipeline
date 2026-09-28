@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+        TEAM = "DevOps"
+    }
+    parameters {
+        string(name: 'ENVIRONMENT', defaultValue: 'dev', description: 'Deployment Environment')
+    }
+    stages {
+        stage("Deploy"){
+            steps {
+                sh 'echo "Deploying $INSTITUTE_NAME app to $ENVIRONMENT for $TEAM team"'
+            }
+        }
+    }
+}

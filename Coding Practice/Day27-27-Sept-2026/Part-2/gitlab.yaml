@@ -1,0 +1,15 @@
+stages: 
+  - deploy 
+
+variables:
+  INSTITUTE_NAME = "Pathnex"
+  TEAM = "DevOps"
+
+deploy:
+  stage: deploy 
+  image: alpine:latest 
+  environment: 
+    name: $CI_COMMIT_REF_NAME
+    url : http://$CI_COMMIT_REF_NAME.pathnex.com 
+  script:
+    - echo "deploying $INSTITUTE_NAME app to $CI_COMMIT_REF_NAME for $TEAM team"

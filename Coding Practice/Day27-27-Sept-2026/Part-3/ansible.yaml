@@ -1,0 +1,10 @@
+- name: copy pathnex files
+  hosts: all
+  become: yes 
+
+  tasks:
+    - name: copy directory
+      copy:
+        src: /opt/pathnex/
+        dest: /backup/pathnex/
+        remote_src: yes

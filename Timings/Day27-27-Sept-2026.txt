@@ -1,0 +1,9 @@
+Kafka topics learnt today :-
+1. producer
+2. topic
+3. consumer
+4. consumer group
+5. broker
+6. Partition
+7. Replication
+8. Zookeeper / KRaft
