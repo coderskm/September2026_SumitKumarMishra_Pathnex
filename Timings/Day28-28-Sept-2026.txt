@@ -1,0 +1,18 @@
+Today I studied about SSL /TLS :-
+
+1. SSL and TLS meaning
+
+2. symmetric and asymmetric cryptography
+
+3. private and public keys
+
+4. types of certificate ->
+1> single domain certificate
+2> wildcard certificate
+3> multiple domain / SAN certificate 
+
+5. let's encrypt and digicert Certified Authorities
+
+6. Certificate Signing Request
+
+7. example to deploy application and change configuration in NGINX for HTTPS
