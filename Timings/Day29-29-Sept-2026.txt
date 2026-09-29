@@ -1,0 +1,8 @@
+Today's I studied about SRE :-
+1. What is SRE
+2. SLA Vs SLO Vs SLI
+3. Error Budget
+4. Hard Freeze Vs Cold Freeze
+5. Other things like CAB, CR and CW
+6. Incident Response 
+7. Observability Tools

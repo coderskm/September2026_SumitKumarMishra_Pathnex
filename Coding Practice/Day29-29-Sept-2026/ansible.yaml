@@ -1,0 +1,15 @@
+- name: pathnex web server
+  hosts: server 
+  become: true
+
+  tasks:
+    - name: pathnex html
+      template:
+        src: ./index.html
+        dest: /usr/share/nginx/html/index.html
+
+    - name: start nginx 
+      service:
+        name: nginx 
+        state: started
+        enable: true
